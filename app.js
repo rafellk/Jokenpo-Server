@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 // Connect to mongo via mongoose
-mongoose.connect('localhost:27017/jokenpo');
+mongoose.connect('mongodb://jokenpo:jokenpo@ds127101.mlab.com:27101/jokenpo');
 var conn = mongoose.connection;
 
 conn.on('error', console.error.bind(console, 'connection error:'));
